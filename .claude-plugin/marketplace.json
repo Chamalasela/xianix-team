@@ -21,6 +21,13 @@
       "description": "Requirement analysis plugin that elaborates backlog items with structured acceptance criteria, dependency mapping, risk identification, and gap detection.",
       "version": "1.0.0",
       "keywords": ["requirement-analysis", "backlog", "grooming", "acceptance-criteria", "gap-detection"]
+    },
+    {
+      "name": "web-tester",
+      "source": "./plugins/web-tester",
+      "description": "Web application functional testing with UI, accessibility, performance, and scenario-based validation via Playwright.",
+      "version": "1.0.0",
+      "keywords": ["web-testing", "playwright", "accessibility", "performance", "functional-testing"]
     }
   ]
 }

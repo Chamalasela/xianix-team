@@ -162,14 +162,16 @@ Parallel Agent launches:
 
 Aggregate the outputs from all four sub-agents into the structured report format defined in `styles/test-report.md`.
 
-Follow the report format exactly:
+Follow the report format exactly as defined in `styles/test-report.md`:
 1. Header (URL, area, context source, confidence, timestamp, scenario counts, overall status)
-2. Executive Summary
-3. Scenario Summary table (all scenarios × all dimensions)
-4. Results by Area table
-5. Critical Issues list
-6. Warnings list
-7. Skipped Scenarios table (if any)
+2. Confidence notice (LOW/MEDIUM only — insert immediately after header if applicable)
+3. Executive Summary (dimension health card table + optional short paragraph)
+4. Priority Fix List (max 5 items, ordered by severity then fix effort — omit if no issues)
+5. Scenario Summary table (all scenarios × all dimensions) + legend line
+6. Results by Area table
+7. Critical Issues (grouped by dimension sub-section)
+8. Warnings (grouped by dimension sub-section, with appendix cross-references)
+9. Skipped & Excluded Scenarios (runtime skips + scope exclusions — omit if both empty)
 
 **Overall Status logic:**
 - `PASS` — no critical issues across any sub-agent
